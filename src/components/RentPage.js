@@ -13,13 +13,13 @@ function RentPage() {
 
     const handleSearch = () => {
         const filtered = PropertyData.filter(property =>
-            (propertyType == 'Any' || property.propertyType === propertyType)
-            &&
             (location === 'Any' || property.location === location)
             &&
             (when === null || compareDates(property.availableDate, when))
             &&
             (price === 'Any' || checkPriceRange(property.price, price))
+            &&
+            (propertyType == 'Any' || property.propertyType === propertyType)
         );
         setFilteredPropertyData(filtered);
     }

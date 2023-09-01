@@ -10,7 +10,7 @@ export const locationOptions = [
 ];
 
 export const priceOptions = [
-    { value: '', label: 'Any' },
+    { value: 'Any', label: 'Any' },
     { value: '$1000-$2000', label: '$1000-$2000' },
     { value: '$2000-$3000', label: '$2000-$3000' },
     { value: '$3000-$4000', label: '$3000-$4000' },
