@@ -36,7 +36,6 @@ function SearchBar(props) {
                         className='border px-3 py-2 rounded-md focus:outline-none focus:border-color2'
                         selected={when}
                         placeholderText='Available Date'
-                        dateFormat="dd/MM/yyyy"
                         onChange={date => setWhen(date)}
                     />
                 </span>

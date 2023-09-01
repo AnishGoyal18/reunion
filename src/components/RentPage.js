@@ -34,8 +34,8 @@ function RentPage() {
     const checkPriceRange = (propertyPrice, selectedPriceRange) => {
         if (selectedPriceRange === 'Above $7000') return propertyPrice >= 7000;
         console.log(selectedPriceRange);
-        const min = selectedPriceRange.split('-')[0].substring(1);
-        const max = selectedPriceRange.split('-')[1].substring(1);
+        const min = selectedPriceRange.split('-')[0]?.substring(1);
+        const max = selectedPriceRange.split('-')[1]?.substring(1);
 
         return propertyPrice >= min && propertyPrice <= max;
     }
